@@ -360,11 +360,11 @@ class CarState():
     self.angle_steers = cp_sas.vl["SAS11"]['SAS_Angle']
     self.angle_steers_rate = cp_sas.vl["SAS11"]['SAS_Speed']
     self.yaw_rate = cp.vl["ESP12"]['YAW_RATE']
-
     self.left_blinker_on_cnt = 50 if cp.vl["CGW1"]['CF_Gway_TSigLHSw'] else max(self.left_blinker_on_cnt - 1, 0)
     self.left_blinker_on = self.left_blinker_on_cnt > 0
     self.right_blinker_on_cnt = 50 if cp.vl["CGW1"]['CF_Gway_TSigRHSw'] else max(self.right_blinker_on_cnt - 1, 0)
     self.right_blinker_on = self.right_blinker_on_cnt > 0
+
     # make blinker flash to be continuous
     if self.v_ego > 17.5 and not self.left_blinker_on:
       self.left_blinker_flash_cnt = 300 if cp.vl["CGW1"]['CF_Gway_TurnSigLh'] else max(self.left_blinker_flash_cnt - 1, 0)
