@@ -162,7 +162,7 @@ class PathPlanner():
     elif sm['carState'].rightBlinker:
       self.lane_change_direction = LaneChangeDirection.right
 
-    # cancel LCA when driver takeover during lane change
+    # cancel LCA when driver takeover during lane change 2020-03-11
     # if (not active) or (self.lane_change_timer > 10.0) or (not one_blinker) or (not self.lane_change_enabled):
     if (not active) or (self.lane_change_timer > 10.0) or (not one_blinker) or (not self.lane_change_enabled) or (sm['carState'].steeringPressed and ((sm['carState'].steeringTorque > 0 and self.lane_change_direction == LaneChangeDirection.right) or (sm['carState'].steeringTorque < 0 and self.lane_change_direction == LaneChangeDirection.left))):
       self.lane_change_state = LaneChangeState.off
