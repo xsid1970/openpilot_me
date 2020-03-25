@@ -56,7 +56,6 @@ class Alert():
   def __gt__(self, alert2):
     return self.alert_priority > alert2.alert_priority
 
-# 메세지 한글화 : crwusiz ( Lee Jong Mun )
 ALERTS = [
   Alert(
       "turningIndicatorOn",
