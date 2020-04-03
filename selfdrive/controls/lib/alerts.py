@@ -264,7 +264,7 @@ ALERTS = [
       "차선을 변경합니다",
       "차선의 차량을 확인하세요",
       AlertStatus.normal, AlertSize.mid,
-      Priority.LOW, VisualAlert.none, AudibleAlert.chimeLanechange, 3.1, .1, .1),
+      Priority.LOW, VisualAlert.none, AudibleAlert.none, .0, .1, .1),
   
     Alert(
       "rightLCAbsm",
