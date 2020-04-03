@@ -68,7 +68,7 @@ ALERTS = [
       "LKAS 버튼 꺼짐",
       "",
       AlertStatus.userPrompt, AlertSize.small,
-      Priority.HIGH, VisualAlert.none, AudibleAlert.none, 0., 0., .1),
+      Priority.HIGH, VisualAlert.none, AudibleAlert.chimeLkas, 2.1, 0., .1),
 
   # Miscellaneous alerts
   Alert(
@@ -76,14 +76,14 @@ ALERTS = [
       "활성화",
       "",
       AlertStatus.normal, AlertSize.none,
-      Priority.MID, VisualAlert.none, AudibleAlert.chimeEngage, .2, 0., 0.),
+      Priority.MID, VisualAlert.none, AudibleAlert.chimeEngage, 1.9, 0., 0.),
 
   Alert(
       "disable",
       "비활성화",
       "",
       AlertStatus.normal, AlertSize.none,
-      Priority.MID, VisualAlert.none, AudibleAlert.chimeDisengage, .2, 0., 0.),
+      Priority.MID, VisualAlert.none, AudibleAlert.chimeDisengage, 2.0, 0., 0.),
 
   Alert(
       "fcw",
@@ -125,7 +125,7 @@ ALERTS = [
       "도로를 주시하세요 : 사용자 도로주시 불안",
       "",
       AlertStatus.normal, AlertSize.small,
-      Priority.LOW, VisualAlert.none, AudibleAlert.none, .0, .1, .1, alert_rate=1),
+      Priority.LOW, VisualAlert.none, AudibleAlert.chimeDistracted, 4.0, .1, .1, alert_rate=1),
 
   Alert(
       "promptDriverDistracted",
@@ -181,7 +181,7 @@ ALERTS = [
       "오픈파일럿 사용준비 완료",
       "항상 핸들을 잡고 도로를 주시하세요",
       AlertStatus.normal, AlertSize.mid,
-      Priority.LOW_LOWEST, VisualAlert.none, AudibleAlert.none, 0., 0., 5.),
+      Priority.LOW_LOWEST, VisualAlert.none, AudibleAlert.chimeStartup, 4.0, 0., 5.),
 
   Alert(
       "startupMaster",
@@ -250,21 +250,21 @@ ALERTS = [
       "자동차선변경",
       "좌측차선의 차량을 확인하세요",
       AlertStatus.normal, AlertSize.mid,
-      Priority.LOW, VisualAlert.none, AudibleAlert.none, .0, .1, .1, alert_rate=0.75),
+      Priority.LOW, VisualAlert.none, AudibleAlert.chimeLanechange, 3.1, .1, .1, alert_rate=0.75),
 
   Alert(
       "preLaneChangeRight",
       "자동차선변경",
       "우측차선의 차량을 확인하세요",
       AlertStatus.normal, AlertSize.mid,
-      Priority.LOW, VisualAlert.none, AudibleAlert.none, .0, .1, .1, alert_rate=0.75),
+      Priority.LOW, VisualAlert.none, AudibleAlert.chimeLanechange, 3.1, .1, .1, alert_rate=0.75),
 
   Alert(
       "laneChange",
       "차선을 변경합니다",
       "차선의 차량을 확인하세요",
       AlertStatus.normal, AlertSize.mid,
-      Priority.LOW, VisualAlert.none, AudibleAlert.none, .0, .1, .1),
+      Priority.LOW, VisualAlert.none, AudibleAlert.chimeLanechange, 3.1, .1, .1),
   
     Alert(
       "rightLCAbsm",
@@ -285,14 +285,14 @@ ALERTS = [
       "핸들을 조작하세요",
       "차선변경 취소 , 차선이 안전하지않습니다",
       AlertStatus.critical, AlertSize.full,
-      Priority.HIGH, VisualAlert.steerRequired, AudibleAlert.chimeWarningRepeat, .4, 3., 3.,),
+      Priority.HIGH, VisualAlert.steerRequired, AudibleAlert.chimeLanechangecancel, 3.5, 3., 3.,),
 
   Alert(
       "posenetInvalid",
       "핸들을 조작하세요",
       "비전 모델 출력 불확실",
       AlertStatus.userPrompt, AlertSize.mid,
-      Priority.LOW, VisualAlert.steerRequired, AudibleAlert.chimeWarning1, .4, 2., 3.),
+      Priority.LOW, VisualAlert.steerRequired, AudibleAlert.chimeVision, 3.5, 2., 3.),
 
   # Non-entry only alerts
   Alert(
@@ -626,7 +626,7 @@ ALERTS = [
       "오픈파일럿 사용불가",
       "비전 모델 출력 불확실",
       AlertStatus.normal, AlertSize.mid,
-      Priority.LOW, VisualAlert.none, AudibleAlert.chimeError, .4, 2., 3.),
+      Priority.LOW, VisualAlert.none, AudibleAlert.chimeVision, 3.5, 2., 3.),
 
   Alert(
       "controlsFailedNoEntry",
