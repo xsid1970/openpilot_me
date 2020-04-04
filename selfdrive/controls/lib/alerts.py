@@ -250,14 +250,14 @@ ALERTS = [
       "자동차선변경",
       "좌측차선의 차량을 확인하세요",
       AlertStatus.normal, AlertSize.mid,
-      Priority.LOW, VisualAlert.none, AudibleAlert.chimeLanechange, 3.1, .1, .1, alert_rate=0.75),
+      Priority.LOW, VisualAlert.none, AudibleAlert.none, .0, .1, .1, alert_rate=0.75),
 
   Alert(
       "preLaneChangeRight",
       "자동차선변경",
       "우측차선의 차량을 확인하세요",
       AlertStatus.normal, AlertSize.mid,
-      Priority.LOW, VisualAlert.none, AudibleAlert.chimeLanechange, 3.1, .1, .1, alert_rate=0.75),
+      Priority.LOW, VisualAlert.none, AudibleAlert.none, .0, .1, .1, alert_rate=0.75),
 
   Alert(
       "laneChange",
@@ -285,7 +285,7 @@ ALERTS = [
       "핸들을 조작하세요",
       "차선변경 취소 , 차선이 안전하지않습니다",
       AlertStatus.critical, AlertSize.full,
-      Priority.HIGH, VisualAlert.steerRequired, AudibleAlert.chimeLanechangecancel, 3.5, 3., 3.,),
+      Priority.HIGH, VisualAlert.steerRequired, AudibleAlert.chimeWarningRepeat, .4, 3., 3.,),
 
   Alert(
       "posenetInvalid",
