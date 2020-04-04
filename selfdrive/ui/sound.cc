@@ -27,8 +27,6 @@ sound_file sound_table[] = {
   { cereal_CarControl_HUDControl_AudibleAlert_chimeEngage, "../assets/sounds/engaged.wav", false },
   { cereal_CarControl_HUDControl_AudibleAlert_chimeStartup, "../assets/sounds/startup.wav", false },  
   { cereal_CarControl_HUDControl_AudibleAlert_chimeDistracted, "../assets/sounds/distracted.wav", false },  
-  { cereal_CarControl_HUDControl_AudibleAlert_chimeLanechange, "../assets/sounds/lanechange.wav", false },  
-  { cereal_CarControl_HUDControl_AudibleAlert_chimeLanechangecancel, "../assets/sounds/lanechangecancel.wav", false },  
   { cereal_CarControl_HUDControl_AudibleAlert_chimeLkas, "../assets/sounds/lkas.wav", false },  
   { cereal_CarControl_HUDControl_AudibleAlert_chimeVision, "../assets/sounds/vision.wav", false },    
   { cereal_CarControl_HUDControl_AudibleAlert_chimeWarning1, "../assets/sounds/warning_1.wav", false },
