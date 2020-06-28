@@ -94,15 +94,15 @@ class kegman_conf():
         self.element_updated = True
 
       if "sR_Kp" not in self.config:
-        self.config.update({"sR_Kp":"0.25"})
-        self.config.update({"sR_Ki":"0.05"})
-        self.config.update({"sR_Kf":"0.00005"})
+        self.config.update({"sR_Kp":"0.10"})
+        self.config.update({"sR_Ki":"0.01"})
+        self.config.update({"sR_Kf":"0.00001"})
         self.element_updated = True
 
       if "sR_Kp2" not in self.config:
-        self.config.update({"sR_Kp2":"0.25"})
-        self.config.update({"sR_Ki2":"0.05"})
-        self.config.update({"sR_Kf2":"0.00005"})
+        self.config.update({"sR_Kp2":"0.10"})
+        self.config.update({"sR_Ki2":"0.01"})
+        self.config.update({"sR_Kf2":"0.00001"})
         self.element_updated = True
 
       if "cV_Ratio" not in self.config:
@@ -146,8 +146,8 @@ class kegman_conf():
         self.write_config(self.config)
 
     else:
-      self.config = {"cameraOffset":"0.06", "battChargeMin":"60", "battChargeMax":"70", \
-                    "wheelTouchSeconds":"30000", "battPercOff":"100", "carVoltageMinEonShutdown":"11800", \
+      self.config = {"cameraOffset":"0.06", "battChargeMin":"70", "battChargeMax":"80", \
+                    "wheelTouchSeconds":"30000", "battPercOff":"10", "carVoltageMinEonShutdown":"11800", \
                     "tuneGernby":"1", "deadzone":"10.0", "steerMax":"255", \
                     "cv_Ratio":"0.7", "cv_Dist":"-5", "steerTorqueOver":"200", \
                     "Kp":"-1", "Ki":"-1", "Kf":"-1", \
@@ -156,8 +156,8 @@ class kegman_conf():
                     "leanStVelocity":"40", "leanLeftAmount":"0", "leanRightAmount":"0", \
                     "steerRatio":"-1", "steerRateCost":"-1", "ALCnudgeLess":"0", "ALCtimer":"1.0", \
                     "sR_boost":"0", "sR_BP0":"0", "sR_BP1":"0", "sR_time":"1", \
-                    "sR_Kp":"0.20", "sR_Ki":"0.04", "sR_Kf":"0.00004", \
-                    "sR_Kp2":"0.20", "sR_Ki2":"0.04", "sR_Kf2":"0.00004"}
+                    "sR_Kp":"0.10", "sR_Ki":"0.01", "sR_Kf":"0.00001", \
+                    "sR_Kp2":"0.10", "sR_Ki2":"0.01", "sR_Kf2":"0.00001"}
 
 
       self.write_config(self.config)
