@@ -148,7 +148,7 @@ class kegman_conf():
     else:
       self.config = {"cameraOffset":"0.06", "battChargeMin":"60", "battChargeMax":"70", \
                     "wheelTouchSeconds":"30000", "battPercOff":"100", "carVoltageMinEonShutdown":"11800", \
-                    "tuneGernby":"1", "deadzone":"0.0", "steerMax":"255", \
+                    "tuneGernby":"1", "deadzone":"10.0", "steerMax":"255", \
                     "cv_Ratio":"0.7", "cv_Dist":"-5", "steerTorqueOver":"200", \
                     "Kp":"-1", "Ki":"-1", "Kf":"-1", \
                     "Kp2":"-1", "Ki2":"-1", "Kf2":"-1", \
