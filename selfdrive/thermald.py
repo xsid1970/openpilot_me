@@ -162,7 +162,7 @@ def check_car_battery_voltage(should_start, health, charging_disabled, msg):
 
 def thermald_thread():
   # prevent LEECO from undervoltage
-  BATT_PERC_OFF = int(kegman.conf['battPercOff'])
+  BATT_PERC_OFF = 100 #int(kegman.conf['battPercOff'])
   
   health_timeout = int(1000 * 2.5 * DT_TRML)  # 2.5x the expected health frequency
 
