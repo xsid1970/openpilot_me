@@ -335,7 +335,7 @@ class PathPlanner():
     self.LP.parse_model(sm['model'])
 
     # Lane change logic
-    below_lane_change_speed = v_ego_kph < 60
+    below_lane_change_speed = v_ego_kph < 40
 
     if not self.lane_change_enabled or (not active) or below_lane_change_speed or (self.lane_change_timer1 > 10.0):  # 10 sec
         self.nCommand = 0
